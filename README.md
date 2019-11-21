@@ -12,3 +12,9 @@ A simple TODO application of serverless application using NodeJs and GraphQL
 
     `npm i apollo-server-lambda graphql-playground-middleware-lambda lodash`
     
+3. #### Run application
+    `serverless offline start`
+    
+    Or
+    
+    `sls offline start`
