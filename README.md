@@ -10,5 +10,5 @@ A simple TODO application of serverless application using NodeJs and GraphQL
 2. #### Install libraries
     `npm i serverless-bundle serverless-dotenv-plugin serverless-offline --save-dev`
 
-    `npm i apollo-server-lambda graphql-playground-middleware-lambda`
+    `npm i apollo-server-lambda graphql-playground-middleware-lambda lodash`
     

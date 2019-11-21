@@ -18,7 +18,8 @@
   "homepage": "https://github.com/NajeebTyson/serverless-node-graphql-todo-app#readme",
   "dependencies": {
     "apollo-server-lambda": "^2.9.9",
-    "graphql-playground-middleware-lambda": "^1.7.13"
+    "graphql-playground-middleware-lambda": "^1.7.13",
+    "lodash": "^4.17.15"
   },
   "devDependencies": {
     "serverless-bundle": "^1.2.5",

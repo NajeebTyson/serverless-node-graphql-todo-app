@@ -10,8 +10,14 @@ const todo = require('../service/todo/index');
 export const resolvers = {
     Query: {
         getTodo: todo.getTodo,
+        getTodoByStatus(_, args) {
+            return todo.getTodoByArgs(args);
+        }
     },
     Mutation: {
-        createTodo: todo.addTodo
+        createTodo(_, args) {
+            console.log(args);
+            return todo.addTodo(args);
+        }
     }
 };

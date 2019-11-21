@@ -16,6 +16,7 @@ export const typeDefs = gql`
     
     type Query {
         getTodo: [Todo!]!
+        getTodoByStatus(completed: Boolean!): [Todo!]!
     }
     
     input TodoInput {

@@ -5,10 +5,16 @@
  * @author: Najeeb Ullah Shah
  * @date: 11/17/19
  */
-let toDos = [{title: "Do serverless", completed: false}];
+import { filter } from 'lodash';
+
+let toDos = [{title: "Do serverless", completed: false}, {title: "Do serverless 2", completed: true}];
 
 function getTodo() {
     return toDos;
+}
+
+function getTodoByArgs(args) {
+    return filter(toDos, args);
 }
 
 function addTodo(args) {
@@ -23,5 +29,6 @@ function addTodo(args) {
 
 export {
     getTodo,
+    getTodoByArgs,
     addTodo
 };
