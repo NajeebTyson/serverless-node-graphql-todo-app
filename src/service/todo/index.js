@@ -7,23 +7,19 @@
  */
 import { filter } from 'lodash';
 
-let toDos = [{title: "Do serverless", completed: false}, {title: "Do serverless 2", completed: true}];
+const toDos = [{title: "Do serverless", completed: false}, {title: "Do GraphQL", completed: true}];
 
 function getTodo() {
     return toDos;
 }
 
 function getTodoByArgs(args) {
+    console.log(toDos);
     return filter(toDos, args);
 }
 
-function addTodo(args) {
-    console.log(args);
-    let todo = 1;
-    console.log('New todo: ', todo);
-    console.log('Todo(s): ', toDos);
+function addTodo(todo) {
     toDos.push(todo);
-    console.log('after: ', toDos);
     return todo;
 }
 

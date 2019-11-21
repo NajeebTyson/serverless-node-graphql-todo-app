@@ -16,8 +16,11 @@ export const resolvers = {
     },
     Mutation: {
         createTodo(_, args) {
-            console.log(args);
-            return todo.addTodo(args);
+            const todoObject = {
+                title: args.todoInput.title,
+                completed: args.toString().completed
+            };
+            return todo.addTodo(todoObject);
         }
     }
 };

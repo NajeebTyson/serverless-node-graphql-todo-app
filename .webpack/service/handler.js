@@ -167,8 +167,11 @@ const resolvers = {
   },
   Mutation: {
     createTodo(_, args) {
-      console.log(args);
-      return todo.addTodo(args);
+      const todoObject = {
+        title: args.todoInput.title,
+        completed: args.toString().completed
+      };
+      return todo.addTodo(todoObject);
     }
 
   }
@@ -256,7 +259,7 @@ __webpack_require__.r(__webpack_exports__);
  * @date: 11/17/19
  */
 
-let toDos = [{
+const toDos = [{
   title: "Do serverless",
   completed: false
 }, {
@@ -269,12 +272,12 @@ function getTodo() {
 }
 
 function getTodoByArgs(args) {
+  console.log(toDos);
   return Object(lodash__WEBPACK_IMPORTED_MODULE_1__["filter"])(toDos, args);
 }
 
-function addTodo(args) {
-  console.log(args);
-  let todo = 1;
+function addTodo(todo) {
+  console.log(todo);
   console.log('New todo: ', todo);
   console.log('Todo(s): ', toDos);
   toDos.push(todo);
