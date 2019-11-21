@@ -1,0 +1,28 @@
+{
+  "name": "serverless-node-graphql-todo-app",
+  "version": "1.0.0",
+  "description": "Simple serverless node graphql todo application",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NajeebTyson/serverless-node-graphql-todo-app.git"
+  },
+  "author": "Najeeb Ullah Shah",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NajeebTyson/serverless-node-graphql-todo-app/issues"
+  },
+  "homepage": "https://github.com/NajeebTyson/serverless-node-graphql-todo-app#readme",
+  "dependencies": {
+    "apollo-server-lambda": "^2.9.9",
+    "graphql-playground-middleware-lambda": "^1.7.13"
+  },
+  "devDependencies": {
+    "serverless-bundle": "^1.2.5",
+    "serverless-dotenv-plugin": "^2.1.1",
+    "serverless-offline": "^5.12.0"
+  }
+}
